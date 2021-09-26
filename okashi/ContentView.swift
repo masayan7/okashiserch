@@ -23,7 +23,9 @@ struct ContentView: View {
                 
                 HStack{
                     Image(uiImage: okashi.image)
-                    
+                        .resizable()
+                        .aspectRatio(contentMode:.fit)
+                        .frame(height:40)
                     
                     //
                     Text(okashi.name)
